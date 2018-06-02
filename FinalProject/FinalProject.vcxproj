@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{63A30FA8-1519-4BD4-9B55-64124FB83621}</ProjectGuid>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <Keyword>ManagedCProj</Keyword>
+    <RootNamespace>FinalProject</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies />
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>Main</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="acous_Gui.cpp" />
+    <ClCompile Include="electric_Pia.cpp" />
+    <ClCompile Include="Form_Acous.cpp" />
+    <ClCompile Include="Form_Ele.cpp" />
+    <ClCompile Include="Form_G.cpp" />
+    <ClCompile Include="Form_Gra.cpp" />
+    <ClCompile Include="Form_Jazz.cpp" />
+    <ClCompile Include="Form_P.cpp" />
+    <ClCompile Include="Form_Peizo.cpp" />
+    <ClCompile Include="Form_Rho.cpp" />
+    <ClCompile Include="grand_Pia.cpp" />
+    <ClCompile Include="jazz_Gui.cpp" />
+    <ClCompile Include="MainForm.cpp" />
+    <ClCompile Include="peizo_Gui.cpp" />
+    <ClCompile Include="rhodes_Pia.cpp" />
+    <ClCompile Include="Testform.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="acous_Gui.h" />
+    <ClInclude Include="electric_Pia.h" />
+    <ClInclude Include="Form_Acous.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Form_Ele.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Form_G.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Form_Gra.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Form_Jazz.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Form_Peizo.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Form_Rho.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="grand_Pia.h" />
+    <ClInclude Include="Guitar_ins.h" />
+    <ClInclude Include="Instruments.h" />
+    <ClInclude Include="jazz_Gui.h" />
+    <ClInclude Include="MainForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="peizo_Gui.h" />
+    <ClInclude Include="Piano_ins.h" />
+    <ClInclude Include="rhodes_Pia.h" />
+    <ClInclude Include="Testform.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form_Acous.resx">
+      <DependentUpon>Form_Acous.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Ele.resx">
+      <DependentUpon>Form_Ele.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_G.resx">
+      <DependentUpon>Form_G.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Gra.resx">
+      <DependentUpon>Form_Gra.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Jazz.resx">
+      <DependentUpon>Form_Jazz.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Peizo.resx">
+      <DependentUpon>Form_Peizo.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Rho.resx">
+      <DependentUpon>Form_Rho.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Testform.resx">
+      <DependentUpon>Testform.h</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
